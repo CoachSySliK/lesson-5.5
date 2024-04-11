@@ -4,24 +4,17 @@ using namespace std;
 
 int main()
 {
-    int line[3];
+    int a, b, c;
     
     cout << "С какими сторонами вы хотите построить треугольник?\n";
-    for (int i = 0; i < 3; i++) {
-        cin >> line[i];
-    }
+    cin >> a >> b >> c;
+
         
-    if (line[0] + line[1] <= line[2]) {
-        cout << "Данный треугольник не возможен!";
-	}
-	else if (line[1] + line[2] <= line[0]) {
-        cout << "Данный треугольник не возможен!";
-	}
-	else if (line[0] + line[2] <= line[1]) {
-        cout << "Данный треугольник не возможен!";
+    if (a < b + c && b < a + c && c < a + b) {
+        cout << "Тамам!";
     }
     else {
-        cout << "Тамам!";
+        cout << "Но тамам!";
     }
 
     return 0;
