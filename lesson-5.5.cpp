@@ -13,9 +13,11 @@ int main()
         
     if (line[0] + line[1] <= line[2]) {
         cout << "Данный треугольник не возможен!";
-    }else if (line[1] + line[2] <= line[0]) {
+	}
+	else if (line[1] + line[2] <= line[0]) {
         cout << "Данный треугольник не возможен!";
-    }else if (line[0] + line[2] <= line[1]) {
+	}
+	else if (line[0] + line[2] <= line[1]) {
         cout << "Данный треугольник не возможен!";
     }
     else {
